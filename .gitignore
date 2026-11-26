@@ -1,0 +1,46 @@
+# Python / environments
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.DS_Store
+
+# Editors, local settings, secrets
+.vscode/
+.idea/
+.env
+
+# Logs from long runs (nohup, tmux redirects)
+nohup.out
+*.log
+logs/
+
+# ---------------------------------------------------------------------------------------------
+# Datasets and downloads (never committed)
+/POP909/
+/POP909-Dataset/
+/dados/
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+
+# ---------------------------------------------------------------------------------------------
+# generation/
+# The generated music (MIDI + rendered audio required by the assignment) IS committed.
+# Only large artifacts stay out.
+generation/**/*.pt
+generation/**/*.pth
+generation/**/*.ckpt
+generation/**/checkpoints/
+generation/**/tokens/
+# never ignore the music deliverables
+!generation/**/*.mid
+!generation/**/*.midi
+!generation/**/*.mp3
+!generation/**/*.wav
+# sampling runs and human reference excerpts (inputs to evaluation); the listening selection is committed elsewhere
+generation/**/outputs/
